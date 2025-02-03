@@ -44,3 +44,31 @@ for (let i = 0; i < sales.length; i++) {
 
 // Logging the total sales to the console using a template literal
 console.log(`Total sales: $${totalSales}`); sales = [120, 85, 200, 150, 90];
+// Using template literals for a cleaner approach
+let welcomeMessageTemplate = `Hello ${customerName}, welcome to our store!`;
+console.log(welcomeMessageTemplate)
+// Declaring a login status
+let isLoggedIn = true;
+
+// Checking access conditions
+if (isLoggedIn) {
+    console.log("Access granted.");
+} else {
+    console.log("Access denied.");
+}
+
+// Logical operations
+let hasPermission = true;
+console.log("Full access:", isLoggedIn && hasPermission);
+console.log("Partial access:", isLoggedIn || hasPermission);
+console.log("Negated login:", !isLoggedIn);
+
+// Declaring a variable stock with an initial value of 10
+let stock = 10;
+
+// Using a while loop to decrease stock until it reaches zero
+while (stock > 0) {
+    console.log(`Stock remaining: ${stock}`);
+    stock--;
+}
+console.log("Stock is now zero.");
